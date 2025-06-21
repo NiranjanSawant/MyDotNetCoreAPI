@@ -66,5 +66,16 @@ namespace WebAppTest1.Controllers
             //var objs1 = _paymentApp.GetDetails();
             return Ok("APi 2");
         }
+
+        [HttpGet("GetUserDetails")]
+        //[ResponseCache(Duration = 60, Location = ResponseCacheLocation.Any)]
+        //[Route("api/v{version:apiVersion}/GetUserDetails")]
+        [ApiVersion("3.0")]
+        public IActionResult GetUserDetails3()
+        {
+            //var objs = _UserApp.CreateUserDetails();
+            //var objs1 = _paymentApp.GetDetails();
+            return Ok("APi 2");
+        }
     }
 }
