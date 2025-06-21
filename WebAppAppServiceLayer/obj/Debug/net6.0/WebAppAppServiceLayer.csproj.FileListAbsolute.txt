@@ -1,0 +1,17 @@
+C:\Users\niran\MyProjects\AngularProject\WebAppAppServiceLayer\bin\Debug\net6.0\WebAppAppServiceLayer.deps.json
+C:\Users\niran\MyProjects\AngularProject\WebAppAppServiceLayer\bin\Debug\net6.0\WebAppAppServiceLayer.dll
+C:\Users\niran\MyProjects\AngularProject\WebAppAppServiceLayer\bin\Debug\net6.0\WebAppAppServiceLayer.pdb
+C:\Users\niran\MyProjects\AngularProject\WebAppAppServiceLayer\obj\Debug\net6.0\WebAppAppServiceLayer.csproj.AssemblyReference.cache
+C:\Users\niran\MyProjects\AngularProject\WebAppAppServiceLayer\obj\Debug\net6.0\WebAppAppServiceLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\niran\MyProjects\AngularProject\WebAppAppServiceLayer\obj\Debug\net6.0\WebAppAppServiceLayer.AssemblyInfoInputs.cache
+C:\Users\niran\MyProjects\AngularProject\WebAppAppServiceLayer\obj\Debug\net6.0\WebAppAppServiceLayer.AssemblyInfo.cs
+C:\Users\niran\MyProjects\AngularProject\WebAppAppServiceLayer\obj\Debug\net6.0\WebAppAppServiceLayer.csproj.CoreCompileInputs.cache
+C:\Users\niran\MyProjects\AngularProject\WebAppAppServiceLayer\obj\Debug\net6.0\WebAppAppServiceLayer.dll
+C:\Users\niran\MyProjects\AngularProject\WebAppAppServiceLayer\obj\Debug\net6.0\refint\WebAppAppServiceLayer.dll
+C:\Users\niran\MyProjects\AngularProject\WebAppAppServiceLayer\obj\Debug\net6.0\WebAppAppServiceLayer.pdb
+C:\Users\niran\MyProjects\AngularProject\WebAppAppServiceLayer\obj\Debug\net6.0\ref\WebAppAppServiceLayer.dll
+C:\Users\niran\MyProjects\AngularProject\WebAppAppServiceLayer\bin\Debug\net6.0\WebAppDomain.dll
+C:\Users\niran\MyProjects\AngularProject\WebAppAppServiceLayer\bin\Debug\net6.0\WebAppRepository.dll
+C:\Users\niran\MyProjects\AngularProject\WebAppAppServiceLayer\bin\Debug\net6.0\WebAppDomain.pdb
+C:\Users\niran\MyProjects\AngularProject\WebAppAppServiceLayer\bin\Debug\net6.0\WebAppRepository.pdb
+C:\Users\niran\MyProjects\AngularProject\WebAppAppServiceLayer\obj\Debug\net6.0\WebAppAppServiceLayer.csproj.CopyComplete

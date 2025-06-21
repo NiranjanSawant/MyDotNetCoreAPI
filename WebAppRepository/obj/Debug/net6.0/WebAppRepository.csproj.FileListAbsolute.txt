@@ -1,0 +1,15 @@
+C:\Users\niran\MyProjects\AngularProject\WebAppRepository\bin\Debug\net6.0\WebAppRepository.deps.json
+C:\Users\niran\MyProjects\AngularProject\WebAppRepository\bin\Debug\net6.0\WebAppRepository.dll
+C:\Users\niran\MyProjects\AngularProject\WebAppRepository\bin\Debug\net6.0\WebAppRepository.pdb
+C:\Users\niran\MyProjects\AngularProject\WebAppRepository\bin\Debug\net6.0\WebAppDomain.dll
+C:\Users\niran\MyProjects\AngularProject\WebAppRepository\bin\Debug\net6.0\WebAppDomain.pdb
+C:\Users\niran\MyProjects\AngularProject\WebAppRepository\obj\Debug\net6.0\WebAppRepository.csproj.AssemblyReference.cache
+C:\Users\niran\MyProjects\AngularProject\WebAppRepository\obj\Debug\net6.0\WebAppRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\niran\MyProjects\AngularProject\WebAppRepository\obj\Debug\net6.0\WebAppRepository.AssemblyInfoInputs.cache
+C:\Users\niran\MyProjects\AngularProject\WebAppRepository\obj\Debug\net6.0\WebAppRepository.AssemblyInfo.cs
+C:\Users\niran\MyProjects\AngularProject\WebAppRepository\obj\Debug\net6.0\WebAppRepository.csproj.CoreCompileInputs.cache
+C:\Users\niran\MyProjects\AngularProject\WebAppRepository\obj\Debug\net6.0\WebAppRepository.csproj.CopyComplete
+C:\Users\niran\MyProjects\AngularProject\WebAppRepository\obj\Debug\net6.0\WebAppRepository.dll
+C:\Users\niran\MyProjects\AngularProject\WebAppRepository\obj\Debug\net6.0\refint\WebAppRepository.dll
+C:\Users\niran\MyProjects\AngularProject\WebAppRepository\obj\Debug\net6.0\WebAppRepository.pdb
+C:\Users\niran\MyProjects\AngularProject\WebAppRepository\obj\Debug\net6.0\ref\WebAppRepository.dll
