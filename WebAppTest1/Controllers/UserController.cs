@@ -88,5 +88,16 @@ namespace WebAppTest1.Controllers
         {
             throw new InvalidOperationException("Boom! Something went wrong testing chk");
         }
-    }
+
+        [HttpGet("GetUserNames")]
+        [ApiVersion("1.0")]
+        public IEnumerable<UserDetails> GetUserNames()
+        {
+            var products = new List<UserDetails> 
+            { new UserDetails {firstName = "Niranjan", lastName = "Sawant" }, 
+                new UserDetails { firstName = "Sachin", lastName = "Tendulkar" }
+             };
+            return products; // This will be serialized into JSON array
+            }
+        }
 }
