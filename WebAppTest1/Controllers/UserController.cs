@@ -86,7 +86,7 @@ namespace WebAppTest1.Controllers
         [ApiVersion("1.0")]
         public IActionResult ThrowError()
         {
-            throw new InvalidOperationException("Boom! Something went wrong");
+            throw new InvalidOperationException("Boom! Something went wrong testing chk");
         }
     }
 }
