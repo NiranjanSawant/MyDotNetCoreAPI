@@ -7,19 +7,23 @@ namespace WebAppTest1.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //[Route("api/v{version:apiVersion}/User")]
     public class UserController : ControllerBase
     {
         private IUserApp _UserApp { get; set; }
-
-        public UserController(IUserApp userApp)
+        private readonly ILogger<UserController> _logger;
+        public UserController(IUserApp userApp, ILogger<UserController> logger)
         {
             _UserApp = userApp;
+            _logger = logger;
+            // Logs an informational message when the controller instance is created. 
+            // Useful for confirming that the controller is up and running.
+            _logger.LogInformation("UserController Started");
         }
 
         [HttpPost("CreateUser")]
-        [Route("api/v{version:apiVersion}/CreateUserDetais")]
-        [ApiVersion("1.0")]
-        public IActionResult CreateUserDetails(UserDetails obj)
+        [MapToApiVersion("1.0")]
+        public IActionResult CreateUserDetails([FromBody] UserDetails obj)
         {
             var objs = _UserApp.CreateUserDetails(obj);
             //var objs1 = _paymentApp.GetDetails();
@@ -27,9 +31,8 @@ namespace WebAppTest1.Controllers
         }
 
         [HttpPost("CreateUser")]
-        [Route("api/v{version:apiVersion}/CreateUserDetais")]
-        [ApiVersion("2.0")]
-        public IActionResult CreateUserDetais(UserDetails obj)
+        [MapToApiVersion("2.0")]
+        public IActionResult CreateUserDetais([FromBody] UserDetails obj)
         {
             var objs = _UserApp.CreateUserDetails(obj);
             //var objs1 = _paymentApp.GetDetails();
@@ -51,13 +54,13 @@ namespace WebAppTest1.Controllers
         [ApiVersion("1.0")]
         public IActionResult GetUserDetails1()
         {
-           // var objs = _UserApp.CreateUserDetails();
+            // var objs = _UserApp.CreateUserDetails();
             //var objs1 = _paymentApp.GetDetails();
             return Ok("APi 1");
         }
 
         [HttpGet("GetUserDetails")]
-        //[ResponseCache(Duration = 60, Location = ResponseCacheLocation.Any)]
+        [ResponseCache(Duration = 60, Location = ResponseCacheLocation.Any)]
         //[Route("api/v{version:apiVersion}/GetUserDetails")]
         [ApiVersion("2.0")]
         public IActionResult GetUserDetails2()
@@ -70,12 +73,20 @@ namespace WebAppTest1.Controllers
         [HttpGet("GetUserDetails")]
         //[ResponseCache(Duration = 60, Location = ResponseCacheLocation.Any)]
         //[Route("api/v{version:apiVersion}/GetUserDetails")]
+        //[OutputCache(Duration = 60)]
         [ApiVersion("3.0")]
         public IActionResult GetUserDetails3()
         {
             //var objs = _UserApp.CreateUserDetails();
             //var objs1 = _paymentApp.GetDetails();
             return Ok("APi 2");
+        }
+
+        [HttpGet("error")]
+        [ApiVersion("1.0")]
+        public IActionResult ThrowError()
+        {
+            throw new InvalidOperationException("Boom! Something went wrong");
         }
     }
 }

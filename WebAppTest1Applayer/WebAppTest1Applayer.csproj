@@ -4,11 +4,13 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\WebAppAppServiceLayer\WebAppAppServiceLayer.csproj" />
     <ProjectReference Include="..\WebAppDomain\WebAppDomain.csproj" />
+    <ProjectReference Include="..\WebAppRepository\WebAppRepository.csproj" />
   </ItemGroup>
 
 </Project>

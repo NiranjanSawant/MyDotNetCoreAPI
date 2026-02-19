@@ -3638,7 +3638,8 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "WebAppAppServiceLayer >= 1.0.0",
-      "WebAppDomain >= 1.0.0"
+      "WebAppDomain >= 1.0.0",
+      "WebAppRepository >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3673,6 +3674,9 @@
             },
             "C:\\Users\\niran\\MyProjects\\AngularProject\\WebAppDomain\\WebAppDomain.csproj": {
               "projectPath": "C:\\Users\\niran\\MyProjects\\AngularProject\\WebAppDomain\\WebAppDomain.csproj"
+            },
+            "C:\\Users\\niran\\MyProjects\\AngularProject\\WebAppRepository\\WebAppRepository.csproj": {
+              "projectPath": "C:\\Users\\niran\\MyProjects\\AngularProject\\WebAppRepository\\WebAppRepository.csproj"
             }
           }
         }

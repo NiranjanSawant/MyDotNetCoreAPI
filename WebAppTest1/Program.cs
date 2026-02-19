@@ -15,10 +15,19 @@ using Microsoft.Extensions.Options;
 using WebAppDomain;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
+using Serilog;
+using WebAppTest1.Middlewares;
+
+Log.Logger = new LoggerConfiguration()
+    .Enrich.FromLogContext()
+    .Enrich.WithMachineName()
+    .Enrich.WithEnvironmentName()
+    .WriteTo.Console()
+    .CreateLogger();
 
 var builder = WebApplication.CreateBuilder(args);
 
-
+builder.Host.UseSerilog();
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -66,7 +75,9 @@ builder.Services.AddApiVersioning(
 var app = builder.Build();
 
 //IConfiguration configuration = app.Configuration;
-
+//app.UseRouting();
+app.UseMiddleware<CorelationIdMiddleware>();
+app.UseMiddleware<ExceptionMiddleware>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -74,7 +85,6 @@ if (app.Environment.IsDevelopment())
     //app.UseSwagger();
     //app.UseSwaggerUI();
     app.UseResponseCaching();
-   
 }
 
 app.UseCors(options =>

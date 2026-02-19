@@ -231,6 +231,9 @@
               },
               "C:\\Users\\niran\\MyProjects\\AngularProject\\WebAppDomain\\WebAppDomain.csproj": {
                 "projectPath": "C:\\Users\\niran\\MyProjects\\AngularProject\\WebAppDomain\\WebAppDomain.csproj"
+              },
+              "C:\\Users\\niran\\MyProjects\\AngularProject\\WebAppRepository\\WebAppRepository.csproj": {
+                "projectPath": "C:\\Users\\niran\\MyProjects\\AngularProject\\WebAppRepository\\WebAppRepository.csproj"
               }
             }
           }
@@ -325,9 +328,21 @@
               "target": "Package",
               "version": "[7.0.10, )"
             },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
+            },
+            "serilog.aspnetcore": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "serilog.sinks.console": {
+              "target": "Package",
+              "version": "[6.1.1, )"
             }
           },
           "imports": [

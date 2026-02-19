@@ -9,7 +9,8 @@
       "WebAppTest1Applayer/1.0.0": {
         "dependencies": {
           "WebAppAppServiceLayer": "1.0.0",
-          "WebAppDomain": "1.0.0"
+          "WebAppDomain": "1.0.0",
+          "WebAppRepository": "1.0.0"
         },
         "runtime": {
           "WebAppTest1Applayer.dll": {}
